@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kasikcam\\Downloads\\CamK\\other projects\\test62\\test62\\test62\\test62.csproj",
+      "projectUniqueName": "C:\\Users\\kasikcam\\Downloads\\CamK\\other projects\\SKY_HOST\\test62\\test62\\test62\\test62.csproj",
       "projectName": "test62",
-      "projectPath": "C:\\Users\\kasikcam\\Downloads\\CamK\\other projects\\test62\\test62\\test62\\test62.csproj",
+      "projectPath": "C:\\Users\\kasikcam\\Downloads\\CamK\\other projects\\SKY_HOST\\test62\\test62\\test62\\test62.csproj",
       "packagesPath": "C:\\Users\\kasikcam\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kasikcam\\Downloads\\CamK\\other projects\\test62\\test62\\test62\\obj\\",
+      "outputPath": "C:\\Users\\kasikcam\\Downloads\\CamK\\other projects\\SKY_HOST\\test62\\test62\\test62\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

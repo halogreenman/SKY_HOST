@@ -7,7 +7,9 @@ public class LinuxTest
     static void Main(string[] args)
     {
         Random bootup = new Random();
-
+        int facnt = 0;
+        Random bad = new Random();
+        string f1 = "";
         string dir = "Home";
         string dir1 = "Desktop";
         string dir2 = "FileManager";
@@ -25,6 +27,8 @@ public class LinuxTest
         Console.WriteLine("Enter pin.\nHint: its 4 digits long");
         while (PwdTF == false)
         {
+            int fail = bad.Next(1, 4);
+
             try
             {
                 string Pwd = Console.ReadLine();
@@ -32,7 +36,15 @@ public class LinuxTest
                 {
                     PwdTF = true;
                     Console.ForegroundColor = ConsoleColor.Green;
-                    Console.WriteLine("Access Granted");
+                    if(fail > 3)
+                    {
+                        Console.WriteLine("Access Granted");
+                    
+                    }
+                    else
+                    {
+                        Console.WriteLine("finally");
+                    }
                     Console.ForegroundColor = ConsoleColor.DarkGray;
                     Console.WriteLine("Logged in as Root");
                     Console.ForegroundColor = ConsoleColor.DarkGreen;
@@ -42,7 +54,24 @@ public class LinuxTest
                 else
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("Access Denied\nIts not that hard.");
+                    if(facnt != 3)
+                    {
+                        facnt++;
+                        Console.WriteLine("Access Denied");
+                    }
+                    else
+                    {
+                      if(fail == 1)
+                        {
+                            Console.WriteLine("its not that hard");
+                        }
+                      else if(fail == 2)
+                        {
+                            Console.WriteLine("how are you this bad");
+                        }
+                      else if (fail == 3) { Console.WriteLine("the password is literally 4 numbers its not that hard"); }
+                      else if(fail == 4) { Console.WriteLine("its the easiest password in the world"); }   
+                    }
                     Console.ForegroundColor = ConsoleColor.Blue;
                 }
             }
@@ -98,7 +127,7 @@ public class LinuxTest
             }
             else if (input == "help" || input == "?")
             {
-                Console.WriteLine("Commands\nCd         changes Directory\nDir          displays current Directory\nHelp            shows this menu\nLs             displays contents of current Directory\nClear           clears screen\nCat [filename]              displays contents of .txt files\nlogout             logs out\nCd list           lists all directories\nDisplay         displays contents of a .png file\nBrowse          Opens local browser file\nBrowse -r         opens local browser in root mode\nRng       generates random number from 1-100\nNetStat     Shows all available hosts\nPing[HostName]       pings specified host");
+                Console.WriteLine("Commands (you dont need to match the casing)\nCd         changes Directory\nDir          displays current Directory\nHelp            shows this menu\nLs             displays contents of current Directory\nClear           clears screen\nCat [filename]              displays contents of .txt files\nlogout             logs out\nCd list           lists all directories\nDisplay         displays contents of a .png file\nBrowse          Opens local browser file\nBrowse -r         opens local browser in root mode\nRng       generates random number from 1-100\nNetStat     Shows all available hosts\nPing[HostName]       pings specified host");
 
             }
             else if (input == "dir")
