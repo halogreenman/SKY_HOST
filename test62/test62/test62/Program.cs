@@ -61,16 +61,17 @@ public class LinuxTest
                     }
                     else
                     {
-                      if(fail == 1)
+                        if (fail == 1)
                         {
                             Console.WriteLine("its not that hard");
                         }
-                      else if(fail == 2)
+                        else if (fail == 2)
                         {
                             Console.WriteLine("how are you this bad");
                         }
-                      else if (fail == 3) { Console.WriteLine("the password is literally 4 numbers its not that hard"); }
-                      else if(fail == 4) { Console.WriteLine("its the easiest password in the world"); }   
+                        else if (fail == 3) { Console.WriteLine("the password is literally 4 numbers its not that hard"); }
+                        else if (fail == 4) { Console.WriteLine("its the easiest password in the world"); }
+                        else if (fail == 5) { Console.WriteLine("i feel bad for the hospital floor"); }
                     }
                     Console.ForegroundColor = ConsoleColor.Blue;
                 }
