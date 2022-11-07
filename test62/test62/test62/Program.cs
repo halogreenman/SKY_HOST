@@ -36,7 +36,7 @@ public class LinuxTest
                 {
                     PwdTF = true;
                     Console.ForegroundColor = ConsoleColor.Green;
-                    if(fail > 3)
+                    if(fail < 3)
                     {
                         Console.WriteLine("Access Granted");
                     
@@ -86,7 +86,7 @@ public class LinuxTest
         {
             Random RNG = new Random();
             Random random = new Random();
-            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
             string input = Console.ReadLine().ToLower();
             if (input == "logout" || input == "exit")
             {
@@ -166,6 +166,10 @@ public class LinuxTest
                 if (dir == dir1)
                 {
                     Console.WriteLine("Note         .txt file           5 GB\nConsole         .exe file            127 MB\nSecret         .png file           32 GB\nBrowser        .exe file           537000 GB");
+                }
+                else if (dir == "Home")
+                {
+                    Console.WriteLine("Home" + "\n" + dir1 + "\n" + dir2 + "\n" + dir3 + "\n" + dir4);
                 }
                 else if (dir == dir2)
                 {
