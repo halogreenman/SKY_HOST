@@ -23,6 +23,8 @@ public class LinuxTest
         Thread.Sleep(bootup.Next(1000, 2000));
         Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine("Initiation complete!");
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine("|-----------------|\r\n \\---------------/\r\n  ~-_---------_-~\r\n     ~-_---_-~\r\n        ~-_\r\n     _-~---~-_\r\n  _-~---------~-_\r\n /---------------\\\r\n|-----------------|");
         Console.ForegroundColor = ConsoleColor.Blue;
         Console.WriteLine("Enter pin.\nHint: its 4 digits long");
         while (PwdTF == false)
@@ -36,7 +38,7 @@ public class LinuxTest
                 {
                     PwdTF = true;
                     Console.ForegroundColor = ConsoleColor.Green;
-                    if(fail < 3)
+                    if(fail != 3)
                     {
                         Console.WriteLine("Access Granted");
                     
