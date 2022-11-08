@@ -43,7 +43,7 @@ public class LinuxTest
                         Console.WriteLine("Access Granted");
                     
                     }
-                    else
+                    else if(fail == 3)
                     {
                         Console.WriteLine("finally");
                     }
